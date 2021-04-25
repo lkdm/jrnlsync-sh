@@ -24,7 +24,7 @@ Sync your iOS entries with your main journal:
 
 1. Make sure you have installed [jrnl.sh](https://jrnl.sh).
 2. Install and run the jrnl-sync script once (see below).
-3. Install [jrnl](https://www.icloud.com/shortcuts/167e5cb818b54eb6845df64a4aec1691) iOS Shortcut.
+3. Install [jrnl](https://www.icloud.com/shortcuts/5cc0f3a9f81a4d67858a9d9048603e8a) iOS Shortcut.
 
 ## How to install jrnl-sync shell script
 
