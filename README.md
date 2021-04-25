@@ -1,9 +1,9 @@
 # jrnl-sync
-Write jrnl.sh entries on iOS and sync anytime. I use Drafts to write entries. The Siri Shortcut will then append those to a plaintext file in a format the the `jrnl.sh` application will understand. Changes are synced over iCloud.
+Write jrnl.sh entries on iOS and sync anytime.
 
-When the file is updated on the host computer (same computer that `jrnl.sh` is installed on), you can sync the iOS entries with your main journal using the `jrnl-sync` bash script.
+Using a Siri Shortcut, write entries in `jrnl.sh` format on your iOS device. The entires are appended to a plaintext file, which can be synced to your computer using iCloud Drive. It can then be synced to your main jrnl.sh journal using the provided shell script.
 
-This will create a backup of the iOS entries, and append the entries using the `jrnl` command. This means the script works with encrypted journals too!
+I personally like to use Drafts.app to write entries, from which I can append them to a journal using the Share menu.
 
 # Installation
 1. Make sure you have installed [jrnl.sh](https://jrnl.sh).
