@@ -40,3 +40,5 @@ jrnl < $BACKUPFILE
 cp /dev/null $OGFILE
 # Ask user if they want to delete the log
 jrnl @log_$DATE --delete
+
+echo "Entries from iOS synced to journal."
