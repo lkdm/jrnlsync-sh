@@ -1,3 +1,5 @@
+![Screenshot of terminal window showing jrnl-sync working](https://repository-images.githubusercontent.com/361320981/8014bf00-a5e1-11eb-9fa4-6850f818b7ff)
+
 # jrnl-sync
 Write jrnl.sh entries on iOS and sync anytime.
 
