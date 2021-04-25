@@ -5,9 +5,9 @@
 # Current date
 DATE=$(date +'%Y%m%d-%H%M')
 # Path to iOS Shortcuts directory 
-SHORTCUTSDIR=~/Documents/jrn/ios/
+SHORTCUTSDIR=$HOME/Library/Mobile\ Documents/iCloud~is~workflow~my~workflows/Documents/journals
 # Path to journal with entries from iOS
-OGFILE=${SHORTCUTSDIR}ios.txt
+OGFILE=${SHORTCUTSDIR}/ios.txt
 # Path for new backup file to be created
 BACKUPFILE="${SHORTCUTSDIR}ios_${DATE}.backup"
 # Message to write in journal once sync has been completed.
