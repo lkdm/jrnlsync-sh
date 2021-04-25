@@ -1,0 +1,42 @@
+#!/bin/zsh
+
+# Syncs journal entries from iOS (made through a Shortcut) with the shell journal.
+
+# Current date
+DATE=$(date +'%Y%m%d-%H%M')
+# Path to iOS Shortcuts directory 
+SHORTCUTSDIR=~/Documents/jrn/ios/
+# Path to journal with entries from iOS
+OGFILE=${SHORTCUTSDIR}ios.txt
+# Path for new backup file to be created
+BACKUPFILE="${SHORTCUTSDIR}ios_${DATE}.backup"
+# Message to write in journal once sync has been completed.
+BACKUPMSG="Entries from iOS synced.\nLog entries such as this one can be deleted using:\n\n\tjrnl @log --delete\n\n@log_${DATE}"
+
+# If directory does not exist
+mkdir -p $SHORTCUTSDIR
+# Create sync file if it does not exist.
+if [ ! -f $OGFILE ]
+then
+	touch $OGFILE
+	echo "Welcome! This script should be used with the accompanying iOS Shortcut, and jrnl.sh software."
+	echo "Script has created a sync file at ${OGFILE}."
+	exit 1
+fi
+
+# If Shortcut journal is empty, terminate script.
+if [ ! -s $OGFILE ]
+then
+	echo "There are no entries to sync. Script will terminate."
+	exit 1
+fi
+
+# Prepend the backup message to the original file, then back it up
+touch $BACKUPFILE
+cat <(echo $BACKUPMSG) $OGFILE > $BACKUPFILE
+# Sync contents of backup file with journal software
+jrnl < $BACKUPFILE
+# Empty the contents of the original file
+cp /dev/null $OGFILE
+# Ask user if they want to delete the log
+jrnl @log_$DATE --delete
