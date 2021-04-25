@@ -1,7 +1,7 @@
 ![Screenshot of terminal window showing jrnl-sync working](https://repository-images.githubusercontent.com/361320981/8014bf00-a5e1-11eb-9fa4-6850f818b7ff)
 
 # jrnl-sync
-Write jrnl.sh entries on iOS and sync anytime.
+Write [jrnl.sh](https://github.com/jrnl-org/jrnl) entries on iOS and sync anytime.
 
 Using a Siri Shortcut, write entries in `jrnl.sh` format on your iOS device. The entires are appended to a plaintext file, which can be synced to your computer using iCloud Drive. It can then be synced to your main jrnl.sh journal using the provided shell script.
 
