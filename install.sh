@@ -1,7 +1,7 @@
 #!/bin/bash
 
 mkdir -p ~/bin
-curl -LJO https://raw.githubusercontent.com/luknuk/jrnl-sync/jrnl-sync.sh
+curl -LJO https://raw.githubusercontent.com/luknuk/main/jrnl-sync/jrnl-sync.sh
 mv jrnl-sync.sh ~/bin/jrnl-sync
 chmod +x ~/bin/jrnl-sync
 
