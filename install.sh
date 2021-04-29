@@ -1,10 +1,10 @@
 #!/bin/bash
 
 mkdir -p ~/bin
-cd ~/bin
-git clone https://github.com/luknuk/jrnl-sync.git
-
-chmod +x jrnl-sync/jrnl-sync
+curl -LJO https://raw.githubusercontent.com/luknuk/jrnl-sync/main/jrnl-sync.sh ~/bin/jrnl-sync
+# git clone https://github.com/luknuk/jrnl-sync.git ~/bin
+mv ~/bin/jrnl-sync ~/bin/jrnl-sync.sh
+chmod +x ~/bin/jrnl-sync/jrnl-sync.sh
 
 echo "Thank you for installing jrnl-sync. Please add the following to your .bashrc or .zshrc:
 
