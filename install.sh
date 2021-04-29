@@ -1,7 +1,7 @@
 #!/bin/bash
 
 mkdir -p ~/bin
-curl -LJO https://raw.githubusercontent.com/luknuk/jrnl-sync/main/jrnl-sync.sh ~/bin/jrnl-sync
+curl -LJO https://raw.githubusercontent.com/luknuk/jrnl-sync/installscript/jrnl-sync.sh ~/bin/jrnl-sync
 # git clone https://github.com/luknuk/jrnl-sync.git ~/bin
 mv ~/bin/jrnl-sync ~/bin/jrnl-sync.sh
 chmod +x ~/bin/jrnl-sync/jrnl-sync.sh
