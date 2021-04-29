@@ -28,30 +28,9 @@ Sync your iOS entries with your main journal:
 
 ## How to install jrnl-sync shell script
 
-Clone the repository.
+Copy and paste the following one-liner into your shell.
 
-    git clone https://github.com/luknuk/jrnl-sync.git
-
-Move `jrnl-sync` shell script to your user binaries directory. Create that if it doesn't exist `mkdir ~/bin`.
-
-    mv jrnl-sync ~/bin/jrnl-sync
-
-If you haven't already, add your user binaries directory to your path variable. Do this by editing your `.bashrc` or `.zshrc` file and appending the following line, and replacing `YOURNAMEHERE` with your own user name.
-
-    path+=('/Users/YOURNAMEHERE/bin')
-    export PATH
-
-Ensure the script has executable permissions.
-
-    chmod +x jrnl-sync
-
-Run it once to create the syncfile.
-
-    jrnl-sync
-
-You will see the following message if installation was successful:
-
-    Welcome! This script should be used with the accompanying iOS Shortcut, and jrnl.sh software.
+    curl -LJO https://raw.githubusercontent.com/luknuk/jrnl-sync/install.sh && bash install.sh; rm -f install.sh
 
 ## Install jrnl Siri Shortcut
 
