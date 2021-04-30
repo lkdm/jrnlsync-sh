@@ -30,7 +30,7 @@ Sync your iOS entries with your main journal:
 
 Copy and paste the following one-liner into your shell.
 
-    curl -LJO https://raw.githubusercontent.com/luknuk/jrnl-sync/main/install.sh && bash install.sh; rm -f install.sh
+    curl -LJO https://raw.githubusercontent.com/lkdm/jrnl-sync/main/install.sh && bash install.sh; rm -f install.sh
 
 ## Install jrnl Siri Shortcut
 

@@ -2,7 +2,7 @@
 
 # Syncs journal entries from iOS (made through a Shortcut) with the shell journal.
 
-echo "Running jrnl-sync. For more info visit:\n\n\thttps://github.com/luknuk/jrnl-sync\n"
+echo "Running jrnl-sync. For more info visit:\n\n\thttps://github.com/lkdm/jrnl-sync\n"
 
 # Current date
 DATE=$(date +'%Y%m%d-%H%M')
